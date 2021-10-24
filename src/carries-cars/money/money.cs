@@ -20,8 +20,8 @@ namespace carries_cars
             this.CurrencyIsoCode = currencyIsoCode;
         }
 
-        public static Money EUR(int amount) => new Money(amount, "EUR");
-        public static Money USD(int amount) => new Money(amount, "USD");
+        public static Money EUR(int amount) => new Money(amount, Constants.Euro);
+        public static Money USD(int amount) => new Money(amount, Constants.UnitedStatesDollar);
 
         public Money MultiplyAndRound(double multiplier)
         {
